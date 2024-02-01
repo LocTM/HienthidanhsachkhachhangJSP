@@ -28,17 +28,16 @@
         <td>Ngày sinh</td>
         <td>Địa chỉ</td>
     </tr>
-    <tr>
-        <td><%= customers.get(0).getName()%></td>
-        <td><%= customers.get(0).getDateOfBirth()%></td>
-        <td><%= customers.get(0).getAddress()%></td>
 
-    </tr>
-    <tr>
-        <td><%= customers.get(1).getName()%></td>
-        <td><%= customers.get(1).getDateOfBirth()%></td>
-        <td><%= customers.get(1).getAddress()%></td>
-    </tr>
+    <c:forEach var= "kh" items="${khachhang}">
+        <tr>
+            <td>${kh.name}</td>
+            <td>${kh.dateOfBirth}</td>
+            <td>${kh.address}</td>
+        </tr>
+    </c:forEach>
+
+
 </table>
 </body>
 </html>
