@@ -16,10 +16,10 @@
     List<Customer> customers = new ArrayList<>();
     customers.add(new Customer("Phan Quyet Thang", "20/10/1999", "Thai Nguyen"));
     customers.add(new Customer("Tran Thanh Hai", "10/10/1997", "Ha Noi"));
+    customers.add(new Customer("Tran Minh Loc", "07/09/1993", "Ha Noi"));
 
     request.setAttribute("khachhang", customers);
 
-    out.println(customers.size());
 %>
 
 <table border="2px" >
